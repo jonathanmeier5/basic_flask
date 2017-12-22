@@ -1,20 +1,14 @@
-Exception on / [GET]
-Traceback (most recent call last):
-  File "/Users/jonathan/dev/hundred_days/tools/basic_flask/.env/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/jonathan/dev/hundred_days/tools/basic_flask/.env/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/jonathan/dev/hundred_days/tools/basic_flask/.env/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/jonathan/dev/hundred_days/tools/basic_flask/.env/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/Users/jonathan/dev/hundred_days/tools/basic_flask/.env/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/jonathan/dev/hundred_days/tools/basic_flask/.env/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/jonathan/dev/hundred_days/tools/basic_flask/tools/decorators.py", line 9, in wrapper
-    msg = ["{}".format(request.timestamp),request.url,str(request.remote_addr)]
-  File "/Users/jonathan/dev/hundred_days/tools/basic_flask/.env/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
-    return getattr(self._get_current_object(), name)
-AttributeError: 'Request' object has no attribute 'timestamp'
-2017-12-21 23:54:34|http://127.0.0.1:5000/|127.0.0.1
+Hi, I'm a simple logger
+Hi, I'm a simple logger
+2017-12-22 00:34:42|http://127.0.0.1:5000/|127.0.0.1
+2017-12-22 00:35:24|http://127.0.0.1:5000/|127.0.0.1
+Hi, I'm a simple logger
+Hi, I'm a simple logger
+Using app.before_request hook
+Hi, I'm a simple logger
+Using app.before_request hook
+Hi, I'm a simple logger
+2017-12-22 00:38:08|http://127.0.0.1:5000/sample/|127.0.0.1
+Hi, I'm a simple logger
+2017-12-22 00:38:10|http://127.0.0.1:5000/sample/|127.0.0.1
+Hi, I'm a simple logger

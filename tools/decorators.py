@@ -5,6 +5,10 @@ from flask import request
 import time
 
 def custom_log(f):
+	'''
+	Example of a decorator that can be used to log info about incoming requests.
+	This actually belongs with the before_request hook.
+	'''
 	@wraps(f)
 	def wrapper(*args, **kwargs):
 		#app.logger.warning("Warning from my logging decorator")
